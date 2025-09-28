@@ -1,0 +1,138 @@
+#root {
+  width: 90%;
+  margin: 50px auto;
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.generate-button {
+  width: 220px;
+  height: 50px;
+  background-color: rgb(39, 99, 66);
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  border: 1px solid #202020;
+  cursor: pointer;
+  color: #FFF;
+}
+
+.update-button {
+  width: 100px;
+  height: 40px;
+  background-color: rgb(236 236 0);
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  border: 1px solid #202020;
+  cursor: pointer;
+}
+
+.delete-button {
+  width: 100px;
+  height: 40px;
+  background-color: rgb(227, 58, 58);
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  border: 1px solid #202020;
+  cursor: pointer;
+}
+
+.note-button {
+  width: 100px;
+  height: 40px;
+  background-color: rgb(232, 193, 146);
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  border: 1px solid #202020;
+  cursor: pointer;
+}
+
+.contact-container {
+  width: 90%;
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-item {
+  background-color: rgb(215 224 255);
+  border: 1px solid rgb(25, 25, 65);
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.contact-item div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-item p {
+  margin: 0;
+  font-size: 18px;
+}
+
+.contact-item ul {
+  margin: 0;
+}
+
+#toast-container>div {
+  opacity: 1;
+}
+
+@media (min-width: 769px) {
+  .generate-button:hover {
+    border: 2px solid #202020;
+  }
+}
+
+@media (max-width: 768px) {
+  #root {
+    margin: 30px auto;
+    gap: 20px;
+  }
+
+  .contact-item {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .generate-button {
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  h3 {
+    font-size: 21px;
+  }
+
+  .contact-item p {
+    font-size: 16px;
+  }
+
+  .contact-item div {
+    gap: 5px;
+  }
+
+  .contact-item button {
+    width: 100%;
+    height: 35px;
+    font-size: 14px;
+  }
+}
